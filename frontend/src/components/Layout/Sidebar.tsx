@@ -75,7 +75,6 @@ const NAV_ITEMS: NavItem[] = [
       { label: "Merchant Accounts", to: "/accounts", end: true },
       { label: "Create Account", to: "/accounts/new" },
       { label: "User Management", to: "/accounts/users" },
-      { label: "PU Applications", to: "/accounts/pu-apps", badge: "new" },
       { label: "Leaderboard", to: "/leaderboard", end: true },
       { label: "Scorecard", to: "/scorecard", end: true },
     ],
@@ -85,6 +84,7 @@ const NAV_ITEMS: NavItem[] = [
     icon: <FileText size={17} />,
     roles: ["admin", "manager"],
     children: [
+      { label: "PU Applications", to: "/accounts/pu-apps", badge: "new", roles: ["admin", "manager"] },
       { label: "Turnover Report", to: "/reports/turnover", end: true },
       { label: "Merchant Summary", to: "/reports/merchant-summary", end: true },
       { label: "Merchant Detailed", to: "/reports/merchant-detailed", end: true },
