@@ -14,6 +14,7 @@ interface StaffAccount {
   accountStatus: string;
   email: string;
   phone: string;
+  role?: string;
 }
 
 // Frontend display roles that map to backend AccountType
@@ -73,6 +74,7 @@ export function UserManagementPage() {
             accountStatus: a.accountStatus,
             email:         a.email ?? '',
             phone:         a.phone ?? '',
+            role:          a.role ?? '',
           }))
       );
       setErr('');
@@ -150,7 +152,7 @@ export function UserManagementPage() {
         }}>
           <Shield size={10} />
           {/*{TYPE_LABEL[r.accountType] ?? r.accountType}*/}
-          {USERNAME_ROLE_LABEL[r.username] ?? TYPE_LABEL[r.accountType] ?? r.accountType}
+          {r.role ? r.role.charAt(0).toUpperCase() + r.role.slice(1).replace(/_/g, ' ') : USERNAME_ROLE_LABEL[r.username] ?? TYPE_LABEL[r.accountType] ?? r.accountType}
         </span>
       ) },
     { key: 'email', header: 'Email',

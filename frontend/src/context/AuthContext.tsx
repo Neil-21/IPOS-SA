@@ -103,7 +103,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (!match)
         return { success: false, error: "Invalid username or password." };
 
-      const role: UserRole = ACCOUNT_TYPE_TO_ROLE[match.accountType] ?? "clerk";
+      /*const role: UserRole = ACCOUNT_TYPE_TO_ROLE[match.accountType] ?? "clerk";*/
+      const role: UserRole = (match.role as UserRole) ?? ACCOUNT_TYPE_TO_ROLE[match.accountType] ?? "clerk";
       const safeUser: User = {
         id: String(match.accountId),
         username: match.username,
