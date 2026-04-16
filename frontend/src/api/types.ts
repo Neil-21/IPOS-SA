@@ -11,6 +11,8 @@ export interface ApiUserAccount {
   password?: string;
   accountType: 'MERCHANT' | 'ADMIN' | 'MANAGER';
   accountStatus: 'NORMAL' | 'SUSPENDED' | 'IN_DEFAULT';
+  role?: string;              // fine-grained staff role (clerk/warehouse/delivery) when accountType alone isn't enough
+
   isActive: boolean;
   contactName?: string;
   companyName?: string;
