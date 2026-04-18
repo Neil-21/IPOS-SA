@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.dto;
 
+/**
+ * UpdateMerchantAccountRequest
+ * DTO for updating a merchant account's editable fields: company name,
+ * contact name, address, phone, fax, email, payment due days, and
+ * overdue days. Used by {@code PUT /api/accounts/{id}}.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.infopharma.ipos_sa.entity.UserAccount;
 import lombok.AllArgsConstructor;

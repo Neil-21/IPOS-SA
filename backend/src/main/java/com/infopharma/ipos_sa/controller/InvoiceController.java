@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.controller;
 
+/**
+ * InvoiceController
+ * REST controller for {@code /api/invoices}.
+ * Thin wrapper around {@link com.infopharma.ipos_sa.service.PaymentService}
+ * that exposes invoice retrieval endpoints. Invoices are generated
+ * automatically when an order is marked as delivered.
+ */
 import com.infopharma.ipos_sa.entity.Invoice;
 import com.infopharma.ipos_sa.service.PaymentService;
 import org.springframework.http.ResponseEntity;

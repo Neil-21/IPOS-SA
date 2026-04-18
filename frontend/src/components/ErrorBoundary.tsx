@@ -1,3 +1,10 @@
+/**
+ * ErrorBoundary.tsx
+ * Class-based React error boundary — catches any render / lifecycle
+ * error in the subtree and shows a styled crash screen with the
+ * error message and stack trace. A "Reload App" button navigates
+ * back to "/" and resets the boundary state.
+ */
 import React from 'react';
 
 interface State { hasError: boolean; error: Error | null; }

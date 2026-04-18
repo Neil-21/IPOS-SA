@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.mapper.impl;
 
+/**
+ * DiscountTierMapper
+ * Maps between a {@link com.infopharma.ipos_sa.entity.DiscountTier} entity
+ * and a {@link com.infopharma.ipos_sa.dto.DiscountPlanRequest.TierRequest}
+ * DTO, used when reading or updating flexible discount plan tiers.
+ */
 import com.infopharma.ipos_sa.dto.DiscountPlanRequest;
 import com.infopharma.ipos_sa.entity.DiscountTier;
 import com.infopharma.ipos_sa.mapper.Mapper;

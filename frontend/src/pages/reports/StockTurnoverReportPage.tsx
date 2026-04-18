@@ -1,3 +1,10 @@
+/**
+ * pages/reports/StockTurnoverReportPage.tsx
+ * On-demand stock turnover report showing opening stock, units sold,
+ * units received, and closing stock per catalogue item for a date range.
+ * Data is fetched from reportsApi.stockTurnover() and displayed in a
+ * printable table.
+ */
 import React, { useState } from "react";
 import { BarChart2, Printer } from "lucide-react";
 import { Page } from "@/components/Layout/Header";

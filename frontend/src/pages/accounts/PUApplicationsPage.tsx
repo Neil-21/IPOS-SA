@@ -1,3 +1,16 @@
+/**
+ * pages/accounts/PUApplicationsPage.tsx
+ * Review queue for Pharmacy Union membership applications. Admins and
+ * managers can inspect, approve, or reject pending applications.
+ *
+ * Features:
+ *   • Filterable table (all / pending / approved / rejected)
+ *   • View modal shows full application details including company info
+ *     for commercial applications
+ *   • Approve / Reject buttons with optional notes field
+ *   • Live sync: viewApp state is kept in sync with the context list so
+ *     status updates are reflected immediately without closing the modal
+ */
 import React, { useState } from 'react';
 import { CheckCircle, XCircle, Eye, Globe } from 'lucide-react';
 import { Page } from '@/components/Layout/Header';

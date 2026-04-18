@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.entity;
 
+/**
+ * StockDelivery
+ * JPA entity recording an inbound stock delivery for a catalogue item.
+ * Used by the stock-turnover report to calculate opening and closing stock
+ * levels. Stores quantity received, delivery date, and the staff member
+ * who recorded the receipt.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import org.hibernate.annotations.OnDelete;

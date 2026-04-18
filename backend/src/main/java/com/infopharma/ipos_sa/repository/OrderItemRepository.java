@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.repository;
 
+/**
+ * OrderItemRepository
+ * Spring Data JPA repository for {@link com.infopharma.ipos_sa.entity.OrderItem}.
+ * Custom queries: find items by order, by a list of orders (bulk report
+ * queries), or by catalogue item. Includes a native {@code DELETE} query
+ * used when a catalogue item is removed to clean up orphaned order lines.
+ */
 import com.infopharma.ipos_sa.entity.CatalogueItem;
 import com.infopharma.ipos_sa.entity.Order;
 import com.infopharma.ipos_sa.entity.OrderItem;

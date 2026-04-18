@@ -1,3 +1,12 @@
+/**
+ * pages/reports/TurnoverReportPage.tsx
+ * On-demand product turnover report fetched from the backend.
+ * Shows units sold and revenue per catalogue item for a chosen date range.
+ *
+ * Flow: user sets start/end dates → clicks Generate → calls
+ * reportsApi.turnover() → displays the result table.
+ * The report is also printable via window.print().
+ */
 import React, { useState } from "react";
 import { BarChart2, Printer } from "lucide-react";
 import { Page } from "@/components/Layout/Header";

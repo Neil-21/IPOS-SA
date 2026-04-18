@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.repository;
 
+/**
+ * CatalogueItemRepository
+ * Spring Data JPA repository for {@link com.infopharma.ipos_sa.entity.CatalogueItem}.
+ * Custom finders: keyword search by description or item ID; availability
+ * threshold query used to identify low-stock items.
+ */
 import com.infopharma.ipos_sa.entity.CatalogueItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.mapper.impl;
 
+/**
+ * OrderSummaryRowMapper
+ * Maps an {@link com.infopharma.ipos_sa.entity.Order} to a
+ * {@link com.infopharma.ipos_sa.dto.MerchantOrdersSummary.OrderSummaryRow}.
+ * Custom TypeMap converts the {@code PaymentStatus} enum to its string name
+ * so the DTO stays serialisation-agnostic.
+ */
 import com.infopharma.ipos_sa.dto.MerchantOrdersSummary;
 import com.infopharma.ipos_sa.entity.Order;
 import com.infopharma.ipos_sa.mapper.Mapper;

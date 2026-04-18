@@ -1,3 +1,17 @@
+/**
+ * pages/reports/AnalyticsPage.tsx
+ * Visual analytics dashboard built with Recharts. Derives all data from
+ * the live AppDataContext — no backend calls needed.
+ *
+ * Charts:
+ *   • Monthly revenue bar chart — total invoice value per calendar month
+ *   • Order status bar chart    — order count by status
+ *   • Account status pie chart  — merchant breakdown by account status
+ *   • Top merchants bar chart   — top-10 merchants by total spend
+ *
+ * KPI cards: total revenue, total orders, active merchants, total invoiced.
+ * A time-range filter (3 m / 6 m / 1 yr / All) narrows the monthly chart.
+ */
 import React, { useMemo, useState } from 'react';
 import { useAppData } from '@/context/AppDataContext';
 import { BarChart2, TrendingUp, ShoppingBag, Users, FileText } from 'lucide-react';

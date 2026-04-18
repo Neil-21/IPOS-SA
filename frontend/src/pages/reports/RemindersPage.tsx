@@ -1,3 +1,18 @@
+/**
+ * pages/reports/RemindersPage.tsx
+ * Overdue payment reminder workflow. Identifies merchants with outstanding
+ * invoices and lets staff mark 1st and 2nd reminders as sent.
+ *
+ * Reminder state is held in local component state (not persisted to the
+ * backend) — it resets on page reload, making this a session-level workflow
+ * tool rather than a permanent record.
+ *
+ * Features:
+ *   • Overdue merchant table with balance and account status
+ *   • Send 1st / 2nd reminder buttons (disabled once sent)
+ *   • Preview modal showing a draft reminder email for the selected merchant
+ *   • Printable reminder list
+ */
 import React, { useState } from 'react';
 import { Mail, Printer, AlertTriangle, CheckCircle } from 'lucide-react';
 import { Page } from '@/components/Layout/Header';

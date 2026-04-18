@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.mapper.impl;
 
+/**
+ * DebtorReminderMapper
+ * Maps a {@link com.infopharma.ipos_sa.entity.UserAccount} to a
+ * {@link com.infopharma.ipos_sa.dto.DebtorReminderItem} for use in the
+ * debtor report. Uses ModelMapper for field projection.
+ */
 import com.infopharma.ipos_sa.dto.DebtorReminderItem;
 import com.infopharma.ipos_sa.entity.UserAccount;
 import com.infopharma.ipos_sa.mapper.Mapper;

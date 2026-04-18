@@ -1,3 +1,12 @@
+/**
+ * components/ui/Modal.tsx
+ * Four form primitives exported from one file:
+ *   • Modal  — accessible dialog overlay. Closes on Escape or backdrop click.
+ *              Accepts optional header, scrollable body, and footer slot.
+ *   • Field  — labelled form field wrapper with required marker, hint, and error text.
+ *   • Input  — styled <input> that highlights its border on focus/error.
+ *   • Select — styled <select> matching the Input look.
+ */
 import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
 import { Button } from './Button';

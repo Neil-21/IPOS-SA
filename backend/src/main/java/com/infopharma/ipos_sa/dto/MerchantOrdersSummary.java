@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.dto;
 
+/**
+ * MerchantOrdersSummary
+ * DTO returned by {@code GET /api/reports/merchant-summary}. Contains order
+ * count, total value, and a list of {@code OrderSummaryRow} objects for all
+ * orders placed by the specified merchant within the requested date range.
+ */
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

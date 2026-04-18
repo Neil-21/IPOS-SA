@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.service;
 
+/**
+ * CatalogueService
+ * Business logic contract for the product catalogue. Implementations handle
+ * CRUD for {@link com.infopharma.ipos_sa.entity.CatalogueItem}, keyword search,
+ * stock additions (recording a {@link com.infopharma.ipos_sa.entity.StockDelivery}),
+ * and generation of the low-stock report.
+ */
 import com.infopharma.ipos_sa.dto.LowStockReportItem;
 import com.infopharma.ipos_sa.dto.StockAddRequest;
 import com.infopharma.ipos_sa.entity.CatalogueItem;

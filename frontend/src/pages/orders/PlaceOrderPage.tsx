@@ -1,3 +1,16 @@
+/**
+ * pages/orders/PlaceOrderPage.tsx
+ * Staff-facing order entry form. Allows a manager or clerk to select a
+ * merchant, browse the active catalogue, build an order basket, and submit.
+ *
+ * Features:
+ *   • Merchant selector — shows current balance and credit limit
+ *   • Catalogue search with add-to-basket and quantity controls
+ *   • Live order summary with per-item totals and applied discount
+ *   • Discount preview using the merchant's fixed or flexible plan
+ *   • Submit confirmation showing the new order ID
+ *   • Print basket via window.print()
+ */
 import React, { useState } from 'react';
 import { ShoppingCart, Plus, Minus, Trash2, Printer, Search, AlertTriangle } from 'lucide-react';
 import { Page } from '@/components/Layout/Header';

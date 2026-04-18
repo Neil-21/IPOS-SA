@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.repository;
 
+/**
+ * OrderRepository
+ * Spring Data JPA repository for {@link com.infopharma.ipos_sa.entity.Order}.
+ * Provides finders by merchant account, by order date range, and by status
+ * exclusion — used by the order service and reporting layer.
+ */
 import com.infopharma.ipos_sa.entity.Order;
 import com.infopharma.ipos_sa.entity.UserAccount;
 import org.springframework.data.jpa.repository.JpaRepository;

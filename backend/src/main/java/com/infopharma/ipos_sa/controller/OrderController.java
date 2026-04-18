@@ -1,5 +1,19 @@
 package com.infopharma.ipos_sa.controller;
 
+/**
+ * OrderController
+ * REST controller for {@code /api/orders}.
+ * Manages the full order lifecycle: place → accept → dispatch → deliver.
+ * Delegates to {@link com.infopharma.ipos_sa.service.OrderService}.
+ *
+ * Key endpoints:
+ *   POST   /api/orders              — place a new order
+ *   GET    /api/orders              — list all orders (optional accountId filter)
+ *   PUT    /api/orders/{id}/accept  — accept a submitted order
+ *   PUT    /api/orders/{id}/dispatch — record courier and dispatch details
+ *   PUT    /api/orders/{id}/deliver — mark delivered and trigger invoice generation
+ *   PUT    /api/orders/{id}/cancel  — cancel an order
+ */
 import com.infopharma.ipos_sa.dto.DispatchRequest;
 import com.infopharma.ipos_sa.dto.OrderRequest;
 import com.infopharma.ipos_sa.entity.Order;

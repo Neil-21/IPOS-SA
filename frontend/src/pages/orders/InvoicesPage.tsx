@@ -1,3 +1,14 @@
+/**
+ * pages/orders/InvoicesPage.tsx
+ * View all invoices with search, merchant filter, and payment status filter.
+ * Clicking a row opens a detail modal showing the full invoice line-items,
+ * totals, discount applied, and payment information.
+ *
+ * Features:
+ *   • Search by invoice ID or merchant name
+ *   • Filter by merchant and by payment status (pending / received / overdue)
+ *   • Detail modal with printable invoice layout
+ */
 import React, { useState } from 'react';
 import { Eye, Printer, Search } from 'lucide-react';
 import { Page } from '@/components/Layout/Header';

@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.service.impl;
 
+/**
+ * DiscountPlanServiceImpl
+ * Implements {@link com.infopharma.ipos_sa.service.DiscountPlanService}.
+ * On update, all existing tiers are deleted and replaced with the new set
+ * from the request — avoiding partial-update complexity with ordered tier lists.
+ */
 import com.infopharma.ipos_sa.dto.DiscountPlanRequest;
 import com.infopharma.ipos_sa.entity.DiscountPlan;
 import com.infopharma.ipos_sa.entity.DiscountTier;

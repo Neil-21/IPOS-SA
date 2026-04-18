@@ -1,3 +1,16 @@
+/**
+ * pages/accounts/AccountManagement.tsx
+ * Full CRUD management page for merchant accounts. Allows admins and
+ * managers to create, edit, view, suspend, and delete merchant records.
+ *
+ * Features:
+ *   • Searchable merchant table with account status badges
+ *   • Add / edit modal with discount plan configuration (fixed or flexible tiers)
+ *   • View modal showing full merchant details and current balance
+ *   • One-click status changes: suspend, activate, default
+ *   • Print/export merchant details via window.print()
+ *   • Deep-link support: ?id=<merchantId> opens the view modal directly
+ */
 import React, { useEffect, useState } from "react";
 import {
   Plus,

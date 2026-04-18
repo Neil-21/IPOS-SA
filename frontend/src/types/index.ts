@@ -1,3 +1,13 @@
+/**
+ * types/index.ts
+ * Canonical frontend domain types for IPOS-SA.
+ * These are the shapes the UI works with — all raw API responses are
+ * converted to these types in api/adapters.ts before reaching the UI.
+ *
+ * Sections:
+ *   Auth & Users · Merchant · Catalogue · Orders · Invoices · Payments
+ *   PU Applications · Reports · UI Helpers
+ */
 // ─────────────────────────────────────────────
 // IPOS-SA Type Definitions
 // ─────────────────────────────────────────────

@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.entity;
 
+/**
+ * Payment
+ * JPA entity recording a payment received against a merchant invoice.
+ * Stores payment amount, method (BANK_TRANSFER | CARD | CHEQUE), receipt
+ * date, the staff member who entered it, and an optional payment reference.
+ * Linked many-to-one to {@link UserAccount} and many-to-one to {@link Invoice}.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import org.hibernate.annotations.OnDelete;

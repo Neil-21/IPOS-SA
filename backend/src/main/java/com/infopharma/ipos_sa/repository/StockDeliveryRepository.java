@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.repository;
 
+/**
+ * StockDeliveryRepository
+ * Spring Data JPA repository for {@link com.infopharma.ipos_sa.entity.StockDelivery}.
+ * Provides finders by delivery date range (for stock-turnover reports) and
+ * by catalogue item. Includes a native {@code DELETE} query to cascade-delete
+ * delivery records when a catalogue item is removed.
+ */
 import com.infopharma.ipos_sa.entity.CatalogueItem;
 import com.infopharma.ipos_sa.entity.StockDelivery;
 import org.springframework.data.jpa.repository.JpaRepository;

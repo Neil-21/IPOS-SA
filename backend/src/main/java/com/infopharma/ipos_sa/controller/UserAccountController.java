@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.controller;
 
+/**
+ * UserAccountController
+ * REST controller for {@code /api/accounts}.
+ * Manages merchant and staff user accounts — creation, retrieval, updates,
+ * status changes, credit-limit adjustments, and discount-plan assignment.
+ * Also exposes the debtor list via the injected {@code ReportService}.
+ */
 import com.infopharma.ipos_sa.dto.*;
 import com.infopharma.ipos_sa.entity.UserAccount;
 import com.infopharma.ipos_sa.mapper.Mapper;

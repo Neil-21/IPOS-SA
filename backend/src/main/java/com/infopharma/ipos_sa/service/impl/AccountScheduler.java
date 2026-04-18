@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.service.impl;
 
+/**
+ * AccountScheduler
+ * Spring {@code @Component} that runs a scheduled task at midnight every day
+ * (cron {@code 0 0 0 * * *}) to flag merchant accounts as {@code IN_DEFAULT}
+ * when any of their invoices have passed their payment due date.
+ * Requires {@code @EnableScheduling} on the main application class.
+ */
 import com.infopharma.ipos_sa.service.UserService;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

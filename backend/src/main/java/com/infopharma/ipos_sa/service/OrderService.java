@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.service;
 
+/**
+ * OrderService
+ * Business logic contract for the order lifecycle. Implementations cover
+ * order placement (stock reservation + price calculation), status progression
+ * (accept → ready → dispatch → deliver), and query methods used by controllers
+ * and the reporting layer.
+ */
 import com.infopharma.ipos_sa.dto.DispatchRequest;
 import com.infopharma.ipos_sa.dto.OrderRequest;
 import com.infopharma.ipos_sa.entity.Order;

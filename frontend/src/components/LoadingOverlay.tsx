@@ -1,3 +1,11 @@
+/**
+ * LoadingOverlay.tsx
+ * Two shared feedback components:
+ *   • LoadingOverlay — full-screen spinner shown while AppDataContext
+ *     is fetching initial data from the backend.
+ *   • ErrorBanner — fixed top-of-page red banner shown when the
+ *     backend connection fails, with an optional retry button.
+ */
 import React from 'react';
 
 export function LoadingOverlay({ message = 'Loading…' }: { message?: string }) {

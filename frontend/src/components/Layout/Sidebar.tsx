@@ -1,3 +1,12 @@
+/**
+ * components/Layout/Sidebar.tsx
+ * Collapsible left navigation sidebar.
+ *
+ * NAV_ITEMS defines the full menu tree with per-item role guards.
+ * NavGroup renders an expandable group with child NavLinks.
+ * Sidebar filters NAV_ITEMS to only show items the logged-in user
+ * has access to, and renders a user avatar + sign-out at the bottom.
+ */
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import {

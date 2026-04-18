@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.mapper.impl;
 
+/**
+ * StockDeliveryMapper
+ * Maps between a {@link com.infopharma.ipos_sa.entity.StockDelivery} and a
+ * {@link com.infopharma.ipos_sa.dto.StockAddRequest}. A custom TypeMap
+ * bridges the name mismatch: {@code quantity} (DTO) → {@code quantityReceived}
+ * (entity). The caller must still set {@code item} and {@code deliveryDate}.
+ */
 import com.infopharma.ipos_sa.dto.StockAddRequest;
 import com.infopharma.ipos_sa.entity.StockDelivery;
 import com.infopharma.ipos_sa.mapper.Mapper;

@@ -1,5 +1,13 @@
 package com.infopharma.ipos_sa.subsystem;
 
+/**
+ * OrderServiceSubsystemTest
+ * Subsystem / integration-style tests for the order pipeline. Uses real
+ * {@link com.infopharma.ipos_sa.service.impl.OrderServiceImpl} and mapper
+ * instances wired together, with in-memory H2 repositories, to verify
+ * the full flow from order placement through dispatch to delivery without
+ * mocking the service internals.
+ */
 import com.infopharma.ipos_sa.dto.OrderRequest;
 import com.infopharma.ipos_sa.entity.*;
 import com.infopharma.ipos_sa.mapper.impl.DispatchMapper;

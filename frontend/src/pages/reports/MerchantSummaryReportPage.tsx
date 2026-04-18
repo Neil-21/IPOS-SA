@@ -1,3 +1,11 @@
+/**
+ * pages/reports/MerchantSummaryReportPage.tsx
+ * On-demand summary report for a single merchant's orders over a date range.
+ * Displays order count, total value, and status breakdown fetched from
+ * reportsApi.merchantOrdersSummary().
+ *
+ * Flow: select merchant + dates → Generate → show summary cards + order table.
+ */
 import React, { useState } from "react";
 import { FileText, Printer } from "lucide-react";
 import { Page } from "@/components/Layout/Header";

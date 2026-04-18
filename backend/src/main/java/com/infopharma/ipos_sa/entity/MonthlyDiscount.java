@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.entity;
 
+/**
+ * MonthlyDiscount
+ * JPA entity recording the monthly discount settlement for a merchant on a
+ * flexible discount plan. Stores the settlement month, the total order value
+ * used to determine the tier, the earned discount amount, and whether
+ * settlement was made by cheque or order deduction.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import org.hibernate.annotations.OnDelete;

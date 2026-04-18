@@ -1,3 +1,17 @@
+/**
+ * App.tsx
+ * Root component — sets up routing, auth, and data providers.
+ *
+ * Provider order (outer → inner):
+ *   BrowserRouter → AuthProvider → AppDataProvider → AppRoutes
+ *
+ * Route access levels:
+ *   • Public:              /login
+ *   • All authenticated:   /dashboard, /orders, /orders/new, /orders/invoices
+ *   • Staff only:          /orders/balance, /orders/payments
+ *   • Admin + Manager:     /accounts, /reports, /leaderboard, /scorecard, /analytics
+ *   • Admin only:          /catalogue, /accounts/users
+ */
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { AuthProvider, useAuth } from '@/context/AuthContext';

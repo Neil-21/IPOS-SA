@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.entity;
 
+/**
+ * DiscountPlan
+ * JPA entity representing a merchant discount plan. Plans can be either
+ * FIXED (a single flat discount rate) or FLEXIBLE (tiered rates based on
+ * cumulative monthly order value). Holds a one-to-many list of
+ * {@link DiscountTier}s for flexible plans.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;

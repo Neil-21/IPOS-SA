@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.mapper.impl;
 
+/**
+ * DispatchMapper
+ * Maps between an {@link com.infopharma.ipos_sa.entity.Order} and a
+ * {@link com.infopharma.ipos_sa.dto.DispatchRequest}. Also provides
+ * {@code applyTo(request, order)} which writes courier details directly
+ * into an existing Order instance without replacing the whole object.
+ */
 import com.infopharma.ipos_sa.dto.DispatchRequest;
 import com.infopharma.ipos_sa.entity.Order;
 import com.infopharma.ipos_sa.mapper.Mapper;

@@ -1,5 +1,17 @@
 package com.infopharma.ipos_sa.entity;
 
+/**
+ * UserAccount
+ * JPA entity representing any system account — merchant (WHOLESALER /
+ * RETAILER) or internal staff (ADMIN / MANAGER / CLERK / WAREHOUSE /
+ * DELIVERY). Holds login credentials, company details, credit limit,
+ * account status, and a reference to the assigned discount plan.
+ *
+ * Enums:
+ *   AccountType   — WHOLESALER | RETAILER | ADMIN | MANAGER | CLERK |
+ *                   WAREHOUSE | DELIVERY
+ *   AccountStatus — NORMAL | SUSPENDED | IN_DEFAULT
+ */
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;

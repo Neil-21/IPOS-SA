@@ -1,3 +1,11 @@
+/**
+ * components/ui/Table.tsx
+ * Generic typed data table component.
+ * Accepts a columns definition array (with optional custom render functions),
+ * a data array, and a keyField. Shows a spinner row while loading, an empty
+ * message row when data is empty, and hover highlighting on clickable rows.
+ * Optional stickyHeader pins the thead to the top of the scrollable container.
+ */
 import React from 'react';
 import type { TableColumn } from '@/types';
 

@@ -1,3 +1,16 @@
+/**
+ * pages/accounts/ScorecardPage.tsx
+ * Composite performance scorecard for every merchant account. Combines
+ * three equally-weighted metrics into a single 0–100 score and assigns
+ * a letter grade (A+ down to F).
+ *
+ * Score components (each 0–100, averaged):
+ *   • Order activity   — delivered orders as % of all orders
+ *   • Spend level      — merchant's total spend scaled against the group max
+ *   • Payment prompt   — invoices with paymentStatus 'received' as % of total
+ *
+ * Grade thresholds: A+ ≥ 90 · A ≥ 80 · B ≥ 70 · C ≥ 60 · D ≥ 50 · F < 50
+ */
 import React, { useMemo } from 'react';
 import { useAppData } from '@/context/AppDataContext';
 import { ClipboardList, TrendingUp, TrendingDown, Minus } from 'lucide-react';

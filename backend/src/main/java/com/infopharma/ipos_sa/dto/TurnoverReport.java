@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.dto;
 
+/**
+ * TurnoverReport
+ * DTO returned by {@code GET /api/reports/turnover}. Contains the report
+ * date range and a list of {@code TurnoverRow} objects showing units sold
+ * and revenue per catalogue item within the period.
+ */
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

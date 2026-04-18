@@ -1,3 +1,12 @@
+/**
+ * pages/reports/ReportHelper.tsx
+ * Shared UI primitives used across all report pages:
+ *   • ReportError  — styled inline error banner with an alert icon
+ *   • Spinner      — animated "Generating report…" indicator
+ *   • DateRange    — two date inputs (start / end) for report period selection
+ *
+ * Kept in one file so every report page imports from a single location.
+ */
 import React from 'react';
 import { AlertCircle, Loader } from 'lucide-react';
 import { Field, Input } from '@/components/ui/Modal';

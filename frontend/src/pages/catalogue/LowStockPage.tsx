@@ -1,3 +1,13 @@
+/**
+ * pages/catalogue/LowStockPage.tsx
+ * Read-only report listing all catalogue items that are currently below
+ * their minimum stock threshold (availability < stockLimit).
+ *
+ * For each item the recommended minimum re-order quantity is calculated as:
+ *   ceil(stockLimit × (1 + bufferPercent / 100)) − availability
+ *
+ * The table is printable via the toolbar button.
+ */
 import React from 'react';
 import { Printer } from 'lucide-react';
 import { Page } from '@/components/Layout/Header';

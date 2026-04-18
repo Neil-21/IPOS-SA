@@ -1,5 +1,17 @@
 package com.infopharma.ipos_sa.service;
 
+/**
+ * ReportService
+ * Business logic contract for all report generation. Implementations query
+ * the repository layer across date ranges and assemble the DTOs returned by
+ * {@code /api/reports/*} endpoints:
+ *   • Turnover report        — revenue and units sold per catalogue item
+ *   • Merchant summary       — order count and total value for one merchant
+ *   • Merchant detailed      — full line-item breakdown for one merchant
+ *   • Invoice report         — invoices (all or per merchant) for a period
+ *   • Stock turnover         — opening/closing stock per item
+ *   • Debtor reminders       — merchants with overdue invoices
+ */
 import com.infopharma.ipos_sa.dto.*;
 
 import java.time.LocalDate;

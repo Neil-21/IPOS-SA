@@ -1,3 +1,10 @@
+/**
+ * components/ui/Button.tsx
+ * Reusable button component supporting four variants (primary, secondary,
+ * ghost, danger), three sizes (sm, md, lg), a loading spinner state,
+ * and optional leading/trailing icon slots.
+ * Disabled and loading both reduce opacity to 55% and block clicks.
+ */
 import React from 'react';
 
 type Variant = 'primary' | 'secondary' | 'ghost' | 'danger';

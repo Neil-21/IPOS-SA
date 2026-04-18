@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.service.impl;
 
+/**
+ * ReportServiceImpl
+ * Implements {@link com.infopharma.ipos_sa.service.ReportService}.
+ * All reports are computed by querying repositories with date-range predicates
+ * and assembling the result DTOs in memory. No caching — reports always
+ * reflect the current database state at the time of the request.
+ */
 import com.infopharma.ipos_sa.dto.*;
 import com.infopharma.ipos_sa.entity.*;
 import com.infopharma.ipos_sa.mapper.Mapper;

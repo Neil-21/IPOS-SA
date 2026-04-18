@@ -1,3 +1,19 @@
+/**
+ * pages/orders/OrderManagement.tsx
+ * Central hub for viewing and progressing orders through their lifecycle.
+ * Staff can accept, dispatch, and mark orders as delivered; merchants see
+ * only their own orders.
+ *
+ * Lifecycle tabs: All · Not Completed · Submitted → Accepted →
+ *   Ready to Dispatch → Dispatched → Delivered · Cancelled
+ *
+ * Features:
+ *   • Role-aware view: merchants see only their orders; staff see all
+ *   • Detail modal with full order breakdown and dispatch info
+ *   • Dispatch modal to record courier, reference, and expected delivery
+ *   • One-click status progression (accept, mark ready, dispatch, deliver)
+ *   • Payment status badge alongside order status
+ */
 import React, { useState } from 'react';
 import { Search, Eye, Truck, CreditCard, Clock, FileText, CheckCircle } from 'lucide-react';
 import { Page } from '@/components/Layout/Header';

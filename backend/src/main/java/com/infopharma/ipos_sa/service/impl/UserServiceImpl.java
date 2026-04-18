@@ -1,5 +1,14 @@
 package com.infopharma.ipos_sa.service.impl;
 
+/**
+ * UserServiceImpl
+ * Implements {@link com.infopharma.ipos_sa.service.UserService}.
+ * Account deletion is fully cascaded in application code: payments are
+ * removed first, then invoices, then orders, then the account itself —
+ * ensuring referential integrity without relying solely on DB constraints.
+ * {@code updateAllMerchantStatuses} scans every merchant's invoices and
+ * sets status to {@code IN_DEFAULT} if any invoice is overdue.
+ */
 import com.infopharma.ipos_sa.entity.*;
 import com.infopharma.ipos_sa.repository.*;
 import com.infopharma.ipos_sa.service.UserService;

@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.entity;
 
+/**
+ * DiscountTier
+ * JPA entity representing a single tier within a flexible {@link DiscountPlan}.
+ * Defines a minimum order value threshold, an optional maximum, and the
+ * discount rate (as a percentage) that applies when a merchant's monthly
+ * spend falls within this range.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;

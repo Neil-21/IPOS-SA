@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.entity;
 
+/**
+ * CatalogueItem
+ * JPA entity representing a pharmaceutical product in the ordering catalogue.
+ * Tracks current availability, minimum stock limit, buffer percentage,
+ * package cost, and active/inactive status. The low-stock threshold is
+ * calculated as: stockLimit × (1 + bufferPercent / 100).
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;

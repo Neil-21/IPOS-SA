@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.controller;
 
+/**
+ * PUApplicationController
+ * REST controller for {@code /api/pu-applications}.
+ * Handles Pharmacy Union membership applications — list, submit, approve,
+ * and reject. Sends email notifications on status changes via
+ * {@link com.infopharma.ipos_sa.service.EmailService}.
+ */
 import com.infopharma.ipos_sa.entity.PUApplication;
 import com.infopharma.ipos_sa.repository.PUApplicationRepository;
 import com.infopharma.ipos_sa.service.EmailService;

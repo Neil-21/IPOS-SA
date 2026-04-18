@@ -1,3 +1,10 @@
+/**
+ * components/Layout/Header.tsx
+ * Three layout primitives used by every page:
+ *   • Header   — sticky top bar with title, optional subtitle, and action slots.
+ *   • Page     — full-height flex column: Header + scrollable <main>.
+ *   • Section  — sub-heading row inside a page with optional action buttons.
+ */
 import React from 'react';
 import { Bell, Search } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';

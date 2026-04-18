@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.entity;
 
+/**
+ * PUApplication
+ * JPA entity representing a Pharmacy Union membership application.
+ * Can be non-commercial (individual email only) or commercial (includes
+ * company registration, director name, and business type). Status
+ * transitions: PENDING → APPROVED | REJECTED.
+ */
 import jakarta.persistence.*;
 import lombok.*;
 

@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.dto;
 
+/**
+ * OrderRequest
+ * DTO submitted when placing a new order. Carries the merchant account ID
+ * and a list of {@code OrderItemRequest} objects (catalogue item ID and
+ * quantity). The service layer resolves prices and calculates totals.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;

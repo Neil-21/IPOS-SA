@@ -1,5 +1,17 @@
 package com.infopharma.ipos_sa.service.impl;
 
+/**
+ * OrderServiceImpl
+ * Implements {@link com.infopharma.ipos_sa.service.OrderService}.
+ * Key behaviours:
+ *   • {@code placeOrder}     — resolves prices from the catalogue, builds
+ *                              OrderItem rows, applies the merchant's discount
+ *                              plan, and sets status to SUBMITTED.
+ *   • {@code markBeingProcessed} — transitions SUBMITTED → ACCEPTED and
+ *                              auto-generates an Invoice for the order.
+ *   • {@code dispatch}       — records courier details and moves to DISPATCHED.
+ *   • {@code markDelivered}  — sets DELIVERED and stamps the delivery date.
+ */
 import com.infopharma.ipos_sa.dto.DispatchRequest;
 import com.infopharma.ipos_sa.dto.OrderRequest;
 import com.infopharma.ipos_sa.entity.*;

@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.mapper.impl;
 
+/**
+ * UpdateMerchantMapper
+ * Maps between a {@link com.infopharma.ipos_sa.entity.UserAccount} and an
+ * {@link com.infopharma.ipos_sa.dto.UpdateMerchantAccountRequest}, used
+ * when updating editable merchant account details (company name, address, etc.).
+ */
 import com.infopharma.ipos_sa.dto.UpdateMerchantAccountRequest;
 import com.infopharma.ipos_sa.entity.UserAccount;
 import com.infopharma.ipos_sa.mapper.Mapper;

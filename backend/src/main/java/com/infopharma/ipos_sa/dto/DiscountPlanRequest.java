@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.dto;
 
+/**
+ * DiscountPlanRequest
+ * DTO for creating or updating a discount plan. Specifies the plan type
+ * (FIXED or FLEXIBLE) and, for flexible plans, a list of {@code TierRequest}
+ * objects defining the value thresholds and corresponding discount rates.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.infopharma.ipos_sa.entity.DiscountPlan;
 import lombok.Data;

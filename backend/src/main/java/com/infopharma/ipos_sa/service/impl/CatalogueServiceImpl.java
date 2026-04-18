@@ -1,5 +1,14 @@
 package com.infopharma.ipos_sa.service.impl;
 
+/**
+ * CatalogueServiceImpl
+ * Implements {@link com.infopharma.ipos_sa.service.CatalogueService}.
+ * Stock additions create a {@link com.infopharma.ipos_sa.entity.StockDelivery}
+ * record and increment the item's {@code availability} counter so the
+ * stock-turnover report can calculate opening/closing stock per period.
+ * Deletes cascade via native SQL queries to remove orphaned
+ * {@code OrderItem} and {@code StockDelivery} rows before removing the item.
+ */
 import com.infopharma.ipos_sa.dto.LowStockReportItem;
 import com.infopharma.ipos_sa.dto.StockAddRequest;
 import com.infopharma.ipos_sa.entity.CatalogueItem;

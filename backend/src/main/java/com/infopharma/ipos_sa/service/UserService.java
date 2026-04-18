@@ -1,5 +1,14 @@
 package com.infopharma.ipos_sa.service;
 
+/**
+ * UserService
+ * Business logic contract for managing {@link com.infopharma.ipos_sa.entity.UserAccount}
+ * records (both merchant and staff accounts). Includes credit-limit and
+ * discount-plan assignment helpers, and a cascade-delete operation that
+ * removes all related payments, invoices, and orders before deleting the
+ * account itself. Also exposes {@code updateAllMerchantStatuses()} which is
+ * called nightly by the {@link com.infopharma.ipos_sa.service.impl.AccountScheduler}.
+ */
 import com.infopharma.ipos_sa.entity.UserAccount;
 
 import java.math.BigDecimal;

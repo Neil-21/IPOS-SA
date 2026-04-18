@@ -1,3 +1,15 @@
+/**
+ * pages/orders/MerchantBalancePage.tsx
+ * Per-merchant account ledger showing a running balance of charges (orders)
+ * and credits (payments). Helps staff and merchants track the current
+ * outstanding balance and full transaction history.
+ *
+ * Features:
+ *   • Merchant selector with current balance and credit-limit summary cards
+ *   • Chronological ledger table with running balance column
+ *   • Colour-coded debit (order) vs credit (payment) rows
+ *   • Account status badge with visual warning for suspended/default accounts
+ */
 import React, { useState } from 'react';
 import { TrendingUp, TrendingDown } from 'lucide-react';
 import { Page } from '@/components/Layout/Header';

@@ -1,5 +1,13 @@
 package com.infopharma.ipos_sa.config;
 
+/**
+ * DatabaseSeeder
+ * {@code CommandLineRunner} that seeds the H2 / PostgreSQL database with
+ * representative sample data on every startup (skipped if data already
+ * exists). Creates demo merchant accounts, catalogue items, discount plans,
+ * sample orders, invoices, payments, and a PU application so the frontend
+ * prototype has realistic data to display.
+ */
 import com.infopharma.ipos_sa.entity.*;
 import com.infopharma.ipos_sa.entity.Order.OrderStatus;
 import com.infopharma.ipos_sa.entity.Order.PaymentStatus;

@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.controller;
 
+/**
+ * CatalogueController
+ * REST controller for {@code /api/catalogue}.
+ * Exposes endpoints to list, create, update, and delete catalogue items,
+ * add stock (restock), and retrieve the low-stock report.
+ * Delegates all business logic to {@link com.infopharma.ipos_sa.service.CatalogueService}.
+ */
 import com.infopharma.ipos_sa.dto.LowStockReportItem;
 import com.infopharma.ipos_sa.dto.StockAddRequest;
 import com.infopharma.ipos_sa.entity.CatalogueItem;

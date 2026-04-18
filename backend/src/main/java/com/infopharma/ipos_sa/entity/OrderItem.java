@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.entity;
 
+/**
+ * OrderItem
+ * JPA entity representing a single line item within an {@link Order}.
+ * Stores the quantity ordered, unit cost at time of order, and the
+ * total line cost. References the parent order and the catalogue item.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;

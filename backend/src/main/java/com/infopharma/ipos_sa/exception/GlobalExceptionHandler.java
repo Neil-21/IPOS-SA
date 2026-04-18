@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.exception;
 
+/**
+ * GlobalExceptionHandler
+ * {@code @RestControllerAdvice} that converts uncaught exceptions into
+ * structured HTTP responses across all controllers.
+ * Currently handles:
+ *   • {@link jakarta.persistence.EntityNotFoundException} → 404 Not Found
+ */
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

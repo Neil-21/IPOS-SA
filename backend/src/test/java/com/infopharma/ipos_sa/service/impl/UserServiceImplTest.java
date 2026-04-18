@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.service;
 
+/**
+ * UserServiceImplTest
+ * Unit tests for {@link com.infopharma.ipos_sa.service.impl.UserServiceImpl}
+ * using Mockito mocks. Verifies account creation, cascade deletion (payments
+ * → invoices → orders → account), credit-limit updates, discount-plan
+ * assignment, and the nightly {@code updateAllMerchantStatuses} logic.
+ */
 import com.infopharma.ipos_sa.entity.*;
 import com.infopharma.ipos_sa.repository.*;
 import com.infopharma.ipos_sa.service.impl.UserServiceImpl;

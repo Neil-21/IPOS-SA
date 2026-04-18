@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.controller;
 
+/**
+ * DiscountPlanController
+ * REST controller for {@code /api/discount-plans}.
+ * Provides CRUD endpoints for fixed and flexible-tier discount plans.
+ * Plans are assigned to merchant accounts via {@link UserAccountController}.
+ */
 import com.infopharma.ipos_sa.dto.DiscountPlanRequest;
 import com.infopharma.ipos_sa.entity.DiscountPlan;
 import com.infopharma.ipos_sa.service.DiscountPlanService;

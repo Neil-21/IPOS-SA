@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.service.impl;
 
+/**
+ * OrderServiceImplTest
+ * Unit tests for {@link OrderServiceImpl} using Mockito mocks for all
+ * repository and mapper dependencies. Covers order placement, status
+ * progression (accept, dispatch, deliver), and error paths such as
+ * placing an order for an unknown account or catalogue item.
+ */
 import com.infopharma.ipos_sa.dto.DispatchRequest;
 import com.infopharma.ipos_sa.dto.OrderRequest;
 import com.infopharma.ipos_sa.entity.*;

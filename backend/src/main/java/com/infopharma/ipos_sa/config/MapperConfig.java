@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.config;
 
+/**
+ * MapperConfig
+ * Spring {@code @Configuration} that exposes a singleton {@link org.modelmapper.ModelMapper}
+ * bean configured with {@code STRICT} matching strategy, ensuring only
+ * explicitly matched fields are mapped and preventing accidental field
+ * collisions across different DTO types.
+ */
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.context.annotation.Bean;

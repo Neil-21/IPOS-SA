@@ -1,3 +1,11 @@
+/**
+ * components/ui/Badge.tsx
+ * Small pill-shaped label components:
+ *   • Badge              — generic coloured pill (primary/success/warning/danger/neutral).
+ *   • AccountStatusBadge — maps AccountStatus ('normal'|'suspended'|'in_default') to a Badge.
+ *   • OrderStatusBadge   — maps OrderStatus to a Badge.
+ *   • PaymentStatusBadge — maps PaymentStatus ('pending'|'received'|'overdue') to a Badge.
+ */
 import React from 'react';
 import type { AccountStatus, OrderStatus, PaymentStatus } from '@/types';
 

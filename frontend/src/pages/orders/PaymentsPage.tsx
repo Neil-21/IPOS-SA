@@ -1,3 +1,14 @@
+/**
+ * pages/orders/PaymentsPage.tsx
+ * Records and lists all payments received against merchant invoices.
+ * Only admin and manager roles can add new payment entries.
+ *
+ * Features:
+ *   • Searchable payments table (by merchant name or invoice ID)
+ *   • Add payment modal: select merchant → auto-populate open invoices →
+ *     enter amount, method (bank transfer / card / cheque), and reference
+ *   • Payment entry is associated with the logged-in user (enteredBy)
+ */
 import React, { useState } from 'react';
 import { CreditCard, Plus, Search } from 'lucide-react';
 import { Page } from '@/components/Layout/Header';

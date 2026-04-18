@@ -1,3 +1,14 @@
+/**
+ * pages/Dashboard.tsx
+ * Home screen shown after login. Displays live KPI stat cards, a recent
+ * orders list, account alerts, and a low-stock summary — all from context.
+ *
+ * Two modal alerts fire on mount:
+ *   • Merchant overdue reminder — shown every access if the logged-in
+ *     merchant has a non-normal account status (spec §8.1).
+ *   • Low-stock warning         — shown to admin/manager if any catalogue
+ *     item is below its minimum stock level (spec CAT requirement).
+ */
 import React, { useState } from 'react';
 import { Package, ShoppingCart, AlertTriangle, TrendingUp, Users } from 'lucide-react';
 import { Page } from '@/components/Layout/Header';

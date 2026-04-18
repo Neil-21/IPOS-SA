@@ -1,3 +1,13 @@
+/**
+ * pages/accounts/LeaderboardPage.tsx
+ * Ranks all merchants by total invoice value (highest spender first).
+ * Displays a podium for the top three and a full ranked table below.
+ *
+ * Derived data (computed with useMemo):
+ *   • totalSpend  — sum of all invoice totalAmounts for the merchant
+ *   • orderCount  — number of orders placed
+ * Ranks are assigned after sorting; ties share the same rank number.
+ */
 import React, { useMemo } from 'react';
 import { useAppData } from '@/context/AppDataContext';
 import { Trophy, TrendingUp, ShoppingBag, AlertCircle } from 'lucide-react';

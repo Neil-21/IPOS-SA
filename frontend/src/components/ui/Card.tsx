@@ -1,3 +1,10 @@
+/**
+ * components/ui/Card.tsx
+ * Two surface components:
+ *   • Card     — basic bordered surface with configurable padding and style overrides.
+ *   • StatCard — KPI card with a label, large value, optional sub-line, icon,
+ *                accent colour, and an optional up/down trend indicator.
+ */
 import React from 'react';
 
 interface CardProps {

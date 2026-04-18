@@ -1,5 +1,13 @@
 package com.infopharma.ipos_sa.service.impl;
 
+/**
+ * PaymentServiceImpl
+ * Implements {@link com.infopharma.ipos_sa.service.PaymentService}.
+ * Recording a payment creates a {@link com.infopharma.ipos_sa.entity.Payment}
+ * entity, sets the linked invoice's {@code paymentStatus} to {@code RECEIVED},
+ * stamps the payment date, and reduces the merchant account's
+ * {@code currentBalance} by the amount paid.
+ */
 import com.infopharma.ipos_sa.dto.PaymentRequest;
 import com.infopharma.ipos_sa.entity.*;
 import com.infopharma.ipos_sa.mapper.Mapper;

@@ -1,5 +1,10 @@
 package com.infopharma.ipos_sa.dto;
 
+/**
+ * UpdateAccountDetailsRequest
+ * DTO for updating a user account's type (role) and status.
+ * Used by {@code PATCH /api/accounts/{id}/status}.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.infopharma.ipos_sa.entity.UserAccount;
 import lombok.Data;

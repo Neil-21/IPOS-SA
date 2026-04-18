@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.dto;
 
+/**
+ * CreateUserAccountRequest
+ * DTO used to create a new user account (merchant or staff).
+ * Carries all fields required to populate a {@link com.infopharma.ipos_sa.entity.UserAccount},
+ * including account type, credentials, company details, and credit limit.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.infopharma.ipos_sa.entity.UserAccount;
 import lombok.AllArgsConstructor;

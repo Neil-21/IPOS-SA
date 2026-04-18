@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.mapper.impl;
 
+/**
+ * UpdateAccountDetailsMapper
+ * Maps between a {@link com.infopharma.ipos_sa.entity.UserAccount} and an
+ * {@link com.infopharma.ipos_sa.dto.UpdateAccountDetailsRequest}, used when
+ * updating an account's type and status fields.
+ */
 import com.infopharma.ipos_sa.dto.UpdateAccountDetailsRequest;
 import com.infopharma.ipos_sa.entity.UserAccount;
 import com.infopharma.ipos_sa.mapper.Mapper;

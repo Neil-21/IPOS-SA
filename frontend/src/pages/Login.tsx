@@ -1,3 +1,11 @@
+/**
+ * pages/Login.tsx
+ * Full-page login screen. Split layout: branded left panel with demo
+ * credentials hint, and a white right panel with the sign-in form.
+ * Delegates authentication to AuthContext.login() which queries the
+ * backend accounts list and matches username + password client-side.
+ * Redirects to /dashboard on success, or shows an inline error.
+ */
 import React, { useState } from 'react';
 import { useNavigate, Navigate } from 'react-router-dom';
 import { useAuth } from '@/context/AuthContext';

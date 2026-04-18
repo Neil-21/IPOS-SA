@@ -1,3 +1,16 @@
+/**
+ * pages/catalogue/CatalogueManagement.tsx
+ * Full CRUD management page for the product catalogue. Supports creating,
+ * editing, deleting, and restocking catalogue items.
+ *
+ * Features:
+ *   • Searchable and filterable table (all / active / inactive / low stock)
+ *   • Add / edit modal with full item fields (package type, unit, cost, etc.)
+ *   • Restock modal to increase item availability
+ *   • Low-stock badge alert for items below their buffer threshold
+ *   • Deep-link support: ?id=<itemId> opens the edit modal directly
+ *   • Print support via window.print()
+ */
 import React, { useState, useEffect } from 'react';
 import { Plus, Search, Edit2, Trash2, AlertTriangle, Package } from 'lucide-react';
 import { Page } from '@/components/Layout/Header';

@@ -1,5 +1,18 @@
 package com.infopharma.ipos_sa.entity;
 
+/**
+ * Order
+ * JPA entity representing a merchant purchase order. Tracks the full
+ * lifecycle from submission through to delivery, along with payment status.
+ *
+ * Enums:
+ *   OrderStatus   — SUBMITTED | ACCEPTED | READY_TO_DISPATCH | DISPATCHED |
+ *                   DELIVERED | CANCELLED
+ *   PaymentStatus — PENDING | RECEIVED | OVERDUE
+ *
+ * When an order reaches DELIVERED status the service layer generates an
+ * {@link Invoice} and deducts availability from affected {@link CatalogueItem}s.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import org.hibernate.annotations.OnDelete;

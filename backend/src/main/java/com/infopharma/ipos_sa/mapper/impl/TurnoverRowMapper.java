@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.mapper.impl;
 
+/**
+ * TurnoverRowMapper
+ * Maps an {@link com.infopharma.ipos_sa.entity.Order} to a
+ * {@link com.infopharma.ipos_sa.dto.TurnoverReport.TurnoverRow}.
+ * Custom TypeMap flattens the nested {@code account.accountId} and
+ * {@code account.companyName} fields onto the flat DTO row.
+ */
 import com.infopharma.ipos_sa.dto.TurnoverReport;
 import com.infopharma.ipos_sa.entity.Order;
 import com.infopharma.ipos_sa.mapper.Mapper;

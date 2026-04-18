@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.mapper.impl;
 
+/**
+ * UserAccountMapper
+ * Maps between a {@link com.infopharma.ipos_sa.entity.UserAccount} entity
+ * and a {@link com.infopharma.ipos_sa.dto.CreateUserAccountRequest} DTO,
+ * used during account creation and retrieval.
+ */
 import com.infopharma.ipos_sa.dto.CreateUserAccountRequest;
 import com.infopharma.ipos_sa.entity.UserAccount;
 import com.infopharma.ipos_sa.mapper.Mapper;

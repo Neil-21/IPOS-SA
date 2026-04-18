@@ -1,5 +1,18 @@
 package com.infopharma.ipos_sa.controller;
 
+/**
+ * ReportController
+ * REST controller for {@code /api/reports}.
+ * Exposes server-computed report endpoints used by the frontend report pages.
+ *
+ * Endpoints:
+ *   GET /api/reports/turnover              — product turnover for a date range
+ *   GET /api/reports/merchant-summary      — order summary per merchant
+ *   GET /api/reports/merchant-detailed     — full order breakdown per merchant
+ *   GET /api/reports/invoices              — invoice list, optionally filtered
+ *   GET /api/reports/debtors              — merchants with overdue payments
+ *   GET /api/reports/stock-turnover        — stock movement report
+ */
 import com.infopharma.ipos_sa.dto.*;
 import com.infopharma.ipos_sa.entity.Invoice;
 import com.infopharma.ipos_sa.service.ReportService;

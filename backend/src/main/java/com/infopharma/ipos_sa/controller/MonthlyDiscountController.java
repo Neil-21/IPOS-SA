@@ -1,5 +1,13 @@
 package com.infopharma.ipos_sa.controller;
 
+/**
+ * MonthlyDiscountController
+ * REST controller for {@code /api/monthly-discount}.
+ * Handles end-of-month discount settlement for merchants on a flexible
+ * discount plan. Reads accumulated order values for the month and
+ * calculates the earned discount tier, which can then be settled via
+ * cheque or applied as a deduction on a future order.
+ */
 import com.infopharma.ipos_sa.entity.*;
 import com.infopharma.ipos_sa.repository.*;
 import jakarta.persistence.EntityNotFoundException;

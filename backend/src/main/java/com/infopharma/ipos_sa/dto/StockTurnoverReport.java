@@ -1,5 +1,11 @@
 package com.infopharma.ipos_sa.dto;
 
+/**
+ * StockTurnoverReport
+ * DTO returned by {@code GET /api/reports/stock-turnover}. Contains the
+ * report date range and a list of {@code StockTurnoverRow} objects showing
+ * opening stock, units sold, units received, and closing stock per item.
+ */
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

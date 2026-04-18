@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.controller;
 
+/**
+ * PaymentController
+ * REST controller for {@code /api/payments}.
+ * Records incoming payments against invoices and updates the corresponding
+ * invoice payment status. Delegates to
+ * {@link com.infopharma.ipos_sa.service.PaymentService}.
+ */
 import com.infopharma.ipos_sa.dto.PaymentRequest;
 import com.infopharma.ipos_sa.entity.Invoice;
 import com.infopharma.ipos_sa.entity.Payment;

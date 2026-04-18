@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.mapper.impl;
 
+/**
+ * OrderItemRowMapper
+ * Maps an {@link com.infopharma.ipos_sa.entity.OrderItem} to an
+ * {@link com.infopharma.ipos_sa.dto.DetailedOrderReport.DetailedOrderRow.ItemRow}.
+ * Uses a custom ModelMapper TypeMap to flatten the nested
+ * {@code item.itemId} and {@code item.description} fields.
+ */
 import com.infopharma.ipos_sa.dto.DetailedOrderReport;
 import com.infopharma.ipos_sa.entity.OrderItem;
 import com.infopharma.ipos_sa.mapper.Mapper;

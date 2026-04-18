@@ -1,3 +1,16 @@
+/**
+ * pages/accounts/UserManagement.tsx
+ * Admin-only page for managing internal staff accounts (admin and manager
+ * roles). Calls the backend /api/accounts/* endpoints directly rather than
+ * going through AppDataContext, as staff accounts are not part of the shared
+ * merchant data model.
+ *
+ * Features:
+ *   • List all non-merchant accounts with role and status
+ *   • Create new admin/manager accounts via modal form
+ *   • Edit username, email, phone, and role
+ *   • Delete accounts with confirmation guard
+ */
 import React, { useState, useEffect, useCallback } from 'react';
 import { Plus, Trash2, Shield, Edit2, Loader, AlertCircle } from 'lucide-react';
 import { Page } from '@/components/Layout/Header';

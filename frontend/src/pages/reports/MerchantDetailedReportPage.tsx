@@ -1,3 +1,11 @@
+/**
+ * pages/reports/MerchantDetailedReportPage.tsx
+ * On-demand detailed order report for a single merchant. Shows every order
+ * within the selected date range with full line-item breakdowns, fetched
+ * from reportsApi.merchantDetailedOrders().
+ *
+ * Flow: select merchant + dates → Generate → expandable order rows with items.
+ */
 import React, { useState } from "react";
 import { FileText, Printer } from "lucide-react";
 import { Page } from "@/components/Layout/Header";

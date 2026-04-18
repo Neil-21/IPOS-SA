@@ -1,3 +1,11 @@
+/**
+ * pages/reports/InvoiceReportPage.tsx
+ * On-demand invoice report filterable by merchant and date range.
+ * Fetches raw invoice data from reportsApi.invoices() and displays
+ * invoice ID, dates, amounts, and payment status in a printable table.
+ *
+ * Merchant filter defaults to "all" to show invoices across the whole system.
+ */
 import React, { useState } from "react";
 import { FileText, Printer } from "lucide-react";
 import { Page } from "@/components/Layout/Header";

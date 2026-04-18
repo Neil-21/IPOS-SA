@@ -1,5 +1,12 @@
 package com.infopharma.ipos_sa.entity;
 
+/**
+ * Invoice
+ * JPA entity representing the invoice generated when an order is delivered.
+ * Stores subtotal, discount applied, total amount, due date, and payment status.
+ * Linked many-to-one to {@link UserAccount} (the merchant) and one-to-one
+ * to the fulfilling {@link Order}.
+ */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import org.hibernate.annotations.OnDelete;

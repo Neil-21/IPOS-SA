@@ -1,5 +1,14 @@
 package com.infopharma.ipos_sa.service;
 
+/**
+ * EmailService
+ * Sends transactional emails for the IPOS-SA application. Currently used
+ * only to notify applicants of PU membership application outcomes.
+ *
+ * When {@code app.mail.disabled=true} (the default for prototype / demo
+ * environments) the email body is written to the application log instead
+ * of being sent, so the feature works end-to-end without an SMTP server.
+ */
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
